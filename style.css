@@ -571,6 +571,37 @@ footer{
     height: 24px;
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  thead {
+    background-color: #f4a261;
+    color: white;
+  }
+
+  th, td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  tbody tr:hover {
+    background-color: #ffe5d9;
+  }
+
+  th {
+    text-transform: uppercase;
+  }
+
 @media screen and (max-width: 1259px) {
     .vl{
         border-right: 0;
