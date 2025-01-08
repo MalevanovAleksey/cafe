@@ -1,0 +1,591 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.content{
+    width: 90%;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 0.05em;
+    background: #FFFDEF;
+}
+
+header{
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none; 
+    color: #000;
+}
+.floatBtn {
+    width: 90px;
+    height: 32px;
+    background-color: #852626;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    border: none;
+    border-radius: 3px;
+    font-family:'Lato', sans-serif;
+    font-size: 13px;
+    
+  }
+  
+  .floatMenu {
+    position: relative;
+    display: none;
+    margin: auto;
+    
+    
+  }
+  
+  .floatContent {
+    display: none;
+    position: absolute;
+    background-color: #f7efed;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 0 0 3px 3px;
+    
+  }
+
+  .floatContent a:last-child{
+    border-radius: 0 0 3px 3px;
+  }
+  
+  .floatContent a {
+    color: black;
+    width: 90px;
+    height: 30px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Lato', sans-serif;
+    font-size: 13px;
+  }
+  
+  .floatContent a:hover {background-color: #F0C1C1;}
+  
+  .floatMenu:hover .floatContent {display: block;}
+  
+  .floatMenu:hover .floatBtn {background-color: #A43F3F;border-radius: 3px 3px 0 0;}
+ .menu{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    display: flex;
+    width: 398px;
+    justify-content: space-between;
+
+}
+.menu a {
+    text-decoration: none;
+    color: #000;
+}
+.menu a.active{
+    border-bottom: 2px solid #852626;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    color: #852626;
+    text-decoration: solid
+}
+
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+} 
+section{
+    height: 85vh; 
+    display: flex;
+    align-items: center;
+}
+.catalog{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    column-gap: 40px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.breakfast{
+    width: 440px;
+    height: 260px;
+    background: #E0F2F8;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.imgBr{
+    width: 180px;
+    height: 180px;
+    display: flex;
+}
+
+.infoBr{
+    width: 180px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.nameBr{
+    width: 162px;
+    height: 34px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    display: flex;
+}
+.vlBreakfast{
+
+    border: none; 
+    background-color: #126C8A;; /* Цвет линии */
+    height: 8px;
+    width: 160px;
+    display: flex;
+
+}
+
+.BrVl{
+    width: 170px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.descriptionBr{
+    width: 162px;
+    height: 88px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    display: flex;
+
+}
+
+
+.cake{
+    width: 440px;
+    height: 260px;
+    background: #F0C1C1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.imgCake{
+    width: 180px;
+    height: 180px;
+    display: flex;
+}
+
+.infoCake{
+    width: 180px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.nameCake{
+    width: 162px;
+    height: 34px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    display: flex;
+}
+.vlCake{
+
+    border: none; 
+    background-color: #8C3F3F; 
+    height: 8px;
+    width: 160px;
+    display: flex;
+
+}
+
+.CakeVl{
+    width: 170px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.descriptionCake{
+    width: 162px;
+    height: 66px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    display: flex;
+
+}
+
+.bigCake{
+    width: 440px;
+    height: 260px;
+    background: rgba(255, 201, 97, 0.61);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.imgBigCake{
+    width: 180px;
+    height: 180px;
+    display: flex;
+}
+
+.infoBigCake{
+    width: 180px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.nameBigCake{
+    width: 162px;
+    height: 34px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    display: flex;
+}
+.vlBigCake{
+
+    border: none; 
+    background-color: #D38E00;; 
+    height: 8px;
+    width: 160px;
+    display: flex;
+
+}
+
+.bigCakeVl{
+    width: 170px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.descriptionBigCake{
+    width: 162px;
+    height: 66px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    display: flex;
+
+}
+
+.east{
+    width: 440px;
+    height: 260px;
+    background: rgba(162, 249, 161, 0.76);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.imgEast{
+    width: 180px;
+    height: 180px;
+    display: flex;
+}
+
+.infoEast{
+    width: 180px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.nameEast{
+    width: 183px;
+    height: 68px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    display: flex;
+}
+.vlEast{
+
+    border: none; 
+    background-color: #149B12; 
+    height: 8px;
+    width: 160px;
+    display: flex;
+
+}
+
+.bigEast{
+    width: 170px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.descriptionEast{
+    width: 162px;
+    height: 66px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    display: flex;
+
+}
+
+footer{
+    width: 100%;
+    height: 33vh;
+    background: #4E0E0E;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.cafe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 231px;
+    height: 84px;
+}
+
+.nameCafe{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: flex;
+}
+
+.timeCafe{
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: lowercase;
+    color: #FFFFFF;
+    display: flex;
+}
+
+.contactCafe{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 33px;
+}
+
+.contact{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    display: flex;
+}
+
+
+@media screen and (min-width: 1400px){
+    .catalog{
+        width: 1000px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:1250px) {
+    section{
+        height: auto;
+    }
+}
+
+@media screen and (max-width:610px){
+    .logo{
+        width: 50%;
+    }
+    .navigation{
+        display: none;
+    }
+    .floatMenu{
+         display: inline-block;
+    }
+    .navigation{
+        width: 50%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    ul.menu{
+        width: 80%;
+        flex-direction: column;
+        gap: 10px;
+    }
+    footer{
+        flex-direction: column;
+    } 
+    .nameCafe{
+        font-size: 14px;
+    
+    }
+    .timeCafe{
+        font-size: 18px;
+        
+    }
+    .contactCafe{
+        gap:22px;
+        display: flex;
+        align-items: center;
+    }
+    .contact{
+        font-size: 16px;
+    }
+    }
+@media screen and (max-width:500px){
+    .breakfast, .cake, .bigCake, .east{
+        width: 330px;
+        height: 210px;
+    }
+    .imgBr, .imgCake,.imgBigCake,.imgEast{
+        width: 140px;
+        height: 140px;
+    }
+    .infoBr, .infoCake, .infoBigCake, .infoEast{
+        width: 140px;
+        height: 140px;
+    }
+    .nameBr, .nameCake, .nameBigCake, .nameEast{
+        font-size: 20px;
+        width: 140px;
+    }
+    .nameEast{
+        height: 60px;
+    }
+    .vlBreakfast, .vlCake, .vlBigCake, .vlEast{
+        width: 120px;
+        height: 6px;
+    }
+    .descriptionBr, .descriptionCake, .descriptionBigCake, .descriptionEast{
+        font-size: 14px;
+        width: 140px;
+    }
+    }
+
+@media screen and (max-width:360px){
+        .breakfast, .cake, .bigCake, .east{
+            width: 250px;
+            height: 160px;
+        }
+        .imgBr, .imgCake,.imgBigCake,.imgEast{
+            width: 100px;
+            height: 100px;
+        }
+        .infoBr, .infoCake, .infoBigCake, .infoEast{
+            width: 100px;
+            height: 100px;
+        }
+        .nameBr, .nameCake, .nameBigCake, .nameEast{
+            font-size: 16px;
+            width: 100px;
+        }
+        .nameEast{
+            height: 60px;
+        }
+        .vlBreakfast, .vlCake, .vlBigCake, .vlEast{
+            width: 90px;
+            height: 6px;
+        }
+        .BrVl,.CakeVl, .bigCakeVl, .eastVl{
+            width: 100px;
+        }
+        .descriptionBr, .descriptionCake, .descriptionBigCake, .descriptionEast{
+            font-size: 11px;
+            width: 100px;
+        }
+        }
+
+@media screen and (max-width:330px){
+            ul.menu{
+            width: 80%;
+            flex-direction: column;
+            gap: 10px;
+            }
+            footer{
+                flex-direction: column;
+                
+            }
+            .nameCafe{
+                font-size: 12px;
+            
+            }
+            .timeCafe{
+                font-size: 16px;
+                
+            }
+            .contactCafe{
+                gap:20px;
+                display: flex;
+                align-items: center;
+            }
+            .contact{
+                font-size: 14px;
+            }
+            }

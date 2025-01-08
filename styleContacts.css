@@ -1,0 +1,388 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.content{
+    width: 90%;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 0.05em;
+    background: #FFFDEF;
+}
+header{
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none; 
+    color: #000;
+}
+.floatBtn {
+    width: 90px;
+    height: 32px;
+    background-color: #852626;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    border: none;
+    border-radius: 3px;
+    font-family:'Lato', sans-serif;
+    font-size: 13px;
+    
+  }
+  
+  .floatMenu {
+    position: relative;
+    display: none;
+    margin: auto;
+    
+    
+  }
+  
+  .floatContent {
+    display: none;
+    position: absolute;
+    background-color: #f7efed;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 0 0 3px 3px;
+    
+  }
+
+  .floatContent a:last-child{
+    border-radius: 0 0 3px 3px;
+  }
+  
+  .floatContent a {
+    color: black;
+    width: 90px;
+    height: 30px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Lato', sans-serif;
+    font-size: 13px;
+  }
+  
+  .floatContent a:hover {background-color: #F0C1C1;}
+  
+  .floatMenu:hover .floatContent {display: block;}
+  
+  .floatMenu:hover .floatBtn {background-color: #A43F3F;border-radius: 3px 3px 0 0;}
+ .menu{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    display: flex;
+    width: 398px;
+    justify-content: space-between;
+    
+}
+.menu a {
+    text-decoration: none;
+    color: #000;
+}
+.menu a.active{
+    border-bottom: 2px solid #852626;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    color: #852626;
+    text-decoration: solid
+}
+
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+} 
+
+
+
+.contacts{
+    height: 85vh; 
+    display: flex;
+    flex-flow: row wrap;
+    align-items:center;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+
+
+.proContacts{
+    width: 470px;
+    height: 265px;
+    background: #FFDEBC;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.blokContacts{
+    width: 435px;
+    height: 245px;
+    margin: auto;
+}
+.nameContacts{
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    display: flex;
+}
+
+.infoContacts{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 433px;
+    height: 206px;
+
+}
+
+.info{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    display: flex;
+}
+
+.fon{
+    width: 603px;
+    height: 535px;
+    display: flex;
+    background-size: cover;
+}
+
+footer{
+    width: 100%;
+    height: 30vh;
+    background: #4E0E0E;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.cafe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 231px;
+    height: 84px;
+}
+
+.nameCafe{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: flex;
+}
+
+.timeCafe{
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: lowercase;
+    color: #FFFFFF;
+    display: flex;
+}
+
+.contactCafe{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 33px;
+}
+
+.contact{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    display: flex;
+}
+
+
+@media screen and (max-width:920px){
+    .proContacts{
+        width: 563px;
+    }
+    
+}
+@media screen and (max-width:1250px){
+    .contacts{
+        height: auto;
+    }
+    
+}
+
+@media screen and (max-width:832px){
+    .info{
+        width: 90%;
+    }
+    
+}
+
+@media screen and (max-width:700px){
+    .proContacts{
+        width: 85vw;
+    }
+    .fon{
+        width: 85vw;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:610px){
+    .logo{
+        width: 50%;
+    }
+    .navigation{
+        display: none;
+    }
+    .floatMenu{
+        display: inline-block;
+    }
+    .navigation{
+        width: 50%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    ul.menu{
+        width: 80%;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .contacts{
+        margin: 15px 0;
+    }
+    footer{
+        flex-direction: column;
+    } 
+    .nameCafe{
+        font-size: 14px;
+    
+    }
+    .timeCafe{
+        font-size: 18px;
+        
+    }
+    .contactCafe{
+        gap:22px;
+        display: flex;
+        align-items: center;
+    }
+    .contact{
+        font-size: 16px;
+    }
+    }
+
+    @media screen and (max-width:330px){
+        ul.menu{
+        width: 80%;
+        flex-direction: column;
+        gap: 10px;
+        }
+        
+        footer{
+            flex-direction: column;
+            
+        }
+        .nameCafe{
+            font-size: 12px;
+        
+        }
+        .timeCafe{
+            font-size: 16px;
+            
+        }
+        .contactCafe{
+            gap:20px;
+            display: flex;
+            align-items: center;
+        }
+        .contact{
+            font-size: 14px;
+        }
+        }
+@media screen and (max-width: 550px){
+    .blokContacts{
+        width: auto;
+        margin: 10px;
+    }
+    .nameContacts{
+        font-size: 26px;
+        font-weight: 400;
+        width: auto;
+    }
+    .info{
+        font-size: 18px;
+    }
+    .infoContacts{
+        width: auto;
+        height: auto;
+    }
+}
+    @media screen and (max-width: 550px){
+    .blokContacts{
+        width: auto;
+        margin: 10px;
+    }
+    .nameContacts{
+        font-size: 26px;
+        font-weight: 400;
+        width: auto;
+    }
+    .info{
+        font-size: 18px;
+    }
+    .infoContacts{
+        width: auto;
+        height: auto;
+    }
+    }
+@media screen and (max-width: 330px){
+        .blokContacts{
+            width: auto;
+            margin: 10px;
+        }
+        .nameContacts{
+            font-size: 24px;
+            font-weight: 400;
+            width: auto;
+        }
+        .info{
+            font-size: 16px;
+        }
+        .infoContacts{
+            width: auto;
+            height: auto;
+        }
+    }

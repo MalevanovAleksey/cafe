@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .registration-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .form-group {
+    margin-bottom: 35px;
+  }
+
+  .form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    position: relative;
+  }
+
+  .form-row label {
+    width: 100px;
+    font-weight: bold;
+  }
+
+  .form-row input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+
+  .form-row input:focus {
+    border-color: #51bd0a;
+  }
+
+  .form-row .status-icon {
+    margin-left: 10px;
+    color: green;
+    visibility: hidden;
+  }
+
+  .form-row input:valid + .status-icon {
+    visibility: visible;
+  }
+
+  .submit-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #56cf15;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .submit-btn:hover {
+    background-color: #419f04;
+  }
+
+  .custom-label {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .captcha {
+    position: relative;
+    left: -15px;
+    width: 111px;
+  }

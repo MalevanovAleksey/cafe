@@ -1,0 +1,811 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.content{
+    width: 90%;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 0.05em;
+    background: #FFFDEF;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    
+}
+
+.logo{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none; 
+    color: #000;
+}
+.floatBtn {
+    width: 90px;
+    height: 32px;
+    background-color: #852626;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    border: none;
+    border-radius: 3px;
+    font-family:'Lato', sans-serif;
+    font-size: 13px;
+    
+  }
+  
+  .floatMenu {
+    position: relative;
+    display: none;
+    margin: auto;
+    
+    
+  }
+  
+  .floatContent {
+    display: none;
+    position: absolute;
+    background-color: #f7efed;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 0 0 3px 3px;
+    
+  }
+
+  .floatContent a:last-child{
+    border-radius: 0 0 3px 3px;
+  }
+  
+  .floatContent a {
+    color: black;
+    width: 90px;
+    height: 30px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Lato', sans-serif;
+    font-size: 13px;
+  }
+  
+  .floatContent a:hover {background-color: #F0C1C1;}
+  
+  .floatMenu:hover .floatContent {display: block;}
+  
+  .floatMenu:hover .floatBtn {background-color: #A43F3F;border-radius: 3px 3px 0 0;}
+  
+ .menu{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    display: flex;
+    width: 398px;
+    justify-content: space-between;
+    
+}
+.menu a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+} 
+.baner{
+    height: 85vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 40px;
+    column-gap: 20px;
+    
+}
+.banerInfo{
+    height: 370px;
+    width: 370px;
+    display: flex;
+    background-image: url(square.svg);
+    background-size: cover;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+.banerCake{
+    width: 370px;
+    height: 370px;
+    background-image: url(BanerCake.png);
+    background-size: cover;
+}
+.squareInfo{
+    width: 292px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.titleBaner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+ 
+.explanation{
+    text-transform: uppercase;
+    
+}
+
+.titleSweet{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.tagline{
+    font-size: 17px;
+}
+
+.order{
+    width: 256px;
+    height: 60px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 3px;
+    background: #852626;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+
+.choice{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+.offer{
+    font-size: 25px;
+    text-transform: uppercase;
+    
+}
+.catalog{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    row-gap: 60px;
+    margin-top: 90px;
+
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    text-transform: uppercase;
+    
+}
+
+
+
+
+
+.breakfasts{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px; 
+    padding: 10px;
+}
+
+.cake{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px; 
+    padding: 10px;
+ }
+
+ .bigcake{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px; 
+    padding: 10px;
+ }
+
+ .east{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px; 
+    padding: 10px;
+ }
+
+.aboutBr{
+    height: 100vh;
+}
+
+.breakfast{
+    margin-top: 0px;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+
+    row-gap: 40px;
+    column-gap: 40px;
+    justify-content: center;
+}
+
+
+.mainBreakfast{
+    font-size: 25px;
+    text-transform: uppercase;
+    
+
+}
+.taglineBreakfast{
+    width: 368px;
+    height: 63px;
+    text-align: center;
+}
+
+.infoBr{
+    width: 625px;
+    height: 289px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+}
+
+
+.orderBreakfast{
+    width: 200px;
+    height: 60px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 3px;
+    background: #852626;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+.breakfast1{
+    width: 445px;
+    height: 276px;
+    background-image: url(завтрак1.png);
+    background-size: cover;
+
+}
+
+.breakfast2{
+    width: 625px;
+    height: 289px;
+    background-image: url(завтрак2.png);
+    background-size: cover;
+    }
+
+.breakfast3{
+    width: 447px;
+    height: 289px;
+    background-image: url(завтрак3.png);
+    background-size: cover;
+}
+
+.FistlineBr{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.SecondlineBr{
+    display: flex;
+    justify-content: space-between;
+}
+
+.delivery{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+
+
+
+}
+.rightDelivery{
+    width: 550px;
+    height: 253px;
+    display: flex;
+    align-items: center;
+    background-color: #E89F9F;
+}
+
+.infoDelivery{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.nameDelivery{
+    display: flex;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.timeDelivery{
+    display: flex;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 140%;
+    letter-spacing: 0.07em;
+}
+
+.deliverybutton{
+    width: 150px;
+    height: 48px;
+    background: #FFEAEA;
+    border-radius: 3px;
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 140%;
+    align-items: center;
+    letter-spacing: 0.05em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.ButtDel{
+    display: flex;
+    width: 87px;
+    height: 42px;
+}
+
+.linkDel{
+    display: flex;
+}
+
+
+
+.imgDelivery{
+    display: flex;
+    width: 550px;
+    height: 253px;
+    background-image: url(доставка.svg);
+    
+}
+
+.timetable{
+    margin-top: 100px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items:center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.timejob{
+    width: 554px;
+    height: 351px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.job{
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.time{
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 42px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+}
+
+.kit{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+
+.number{
+    width: 90px;
+    height: 101px;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.numeric{
+    font-weight: 300;
+    font-size: 45px;
+    line-height: 53px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    display: flex;
+}
+
+.eat{
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    display: flex;
+}
+
+.vl{
+    border-right: 2px solid #000000;
+    height: 351px;
+    display: flex;
+}
+
+.joke{
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    
+}
+
+.decorJoke{
+    width: 554px;
+    height: 351px;
+    display: flex;
+    
+   
+}
+
+footer{
+    width: 100%;
+    height: 30vh;
+    background: #4E0E0E;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.cafe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 231px;
+    height: 84px;
+}
+
+.nameCafe{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: flex;
+}
+
+.timeCafe{
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: lowercase;
+    color: #FFFFFF;
+    display: flex;
+}
+
+.contactCafe{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    gap: 33px;
+}
+
+.contact{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    display: flex;
+}
+
+.vk{
+    width: 24px;
+    height: 24px;
+}
+
+@media screen and (max-width: 1259px) {
+    .vl{
+        border-right: 0;
+        border-bottom: 2px solid #000000;
+        width: 70%;
+        height: 0;
+    }
+    .timetable{
+        justify-content: center;
+    }
+    .decorJoke{
+        height: 180px;
+    }
+    .aboutBr{
+        height: auto;
+        margin-bottom: 100px;
+    }
+    .choice{
+        height: auto;
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 865px) {
+    .baner{
+        height: auto;
+        margin-bottom: 100px;
+    }
+    
+    
+}
+
+@media screen and (max-width:832px){
+    .info{
+        width: 90%;
+    }
+    .breakfast1{
+        background-image: url(завтрак1-370.png);
+        background-size: cover;
+        width: 370px;
+    }
+    .breakfast2{
+        width: 370px;
+        background-image: url(завтрак2-370.png);
+        background-size: cover;
+    }
+    .breakfast3{
+        width: 370px;
+        background-image: url(завтрак3-370.png);
+        background-size: cover;
+    }
+
+}
+
+@media screen and (max-width:637px){
+    
+    .baner{
+        margin-top: 40px;
+    }
+    .catalog{
+        margin-top: 40px;
+    }
+    .imgDelivery{
+        
+        background-image: url(доставка-637.svg);
+        background-size: cover;
+
+    }
+}
+
+@media screen and (max-width:610px){
+    .logo{
+        width: 50%;
+    }
+    .navigation{
+        display: none;
+    }
+    .floatMenu{
+        display: inline-block;
+    }
+    .navigation{
+        width: 50%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    ul.menu{
+    width: 80%;
+    flex-direction: column;
+    gap: 10px;
+    }
+    footer{
+        flex-direction: column;
+    } 
+    .nameCafe{
+        font-size: 14px;
+    
+    }
+    .timeCafe{
+        font-size: 18px;
+        
+    }
+    .contactCafe{
+        gap:22px;
+        display: flex;
+        align-items: center;
+    }
+    .contact{
+        font-size: 16px;
+    }
+    .vk{
+        width: 24px;
+        height: 24px;
+    }
+    }
+
+
+    @media screen and (max-width:470px){
+        .banerInfo{
+            width: 260px;
+            height: 260px;
+        }
+        .squareInfo{
+            width: 220px;
+            height: 220px;
+            justify-content: space-around;
+        }
+        .explanation{
+            font-size: 12px;
+        }
+        .titleSweet{
+            font-size: 26px;
+        }
+        .tagline{
+            font-size: 14px;
+        }
+        .order{
+            width: 180px;
+            height: 50px;
+            font-size: 12px;
+            font-weight: 400;
+        }
+        .banerCake{
+            width: 260px;
+            height: 260px;
+        }
+        .infoBr{
+            width: 260px;
+        }
+        .taglineBreakfast{
+            width: 260px;
+        }
+        .breakfast1{
+            background-image: url(завтрак1-260.png);
+            background-size: cover;
+            width: 260px;
+            height: 260px;
+        }
+        .breakfast2{
+            width: 260px;
+            height: 260px;
+            background-image: url(завтрак2-260.png);
+            background-size: cover;
+        }
+        .breakfast3{
+            width: 260px;
+            height: 260px;
+            background-image: url(завтрак3-260.png);
+            background-size: cover;
+        }
+        .infoDelivery{
+            margin: 0 25px;
+        }
+
+
+        .timejob{
+            width: auto;
+            height: auto;
+        }
+        .job{
+            font-size: 19px;
+        }
+        .time{
+            font-size: 22px;
+        }
+        .kit{
+            justify-content: space-between;
+            margin: 20px;
+        }
+        .number{
+            width: 80px;
+        }
+        .numeric{
+            font-size: 35px;
+        }
+        .eat{
+            font-size: 11px;
+        }
+        .joke{
+            width: auto;
+            height: auto;
+            font-size: 18-px;
+        }
+    }
+
+    @media screen and (max-width:330px){
+        .logo{
+            width: auto;
+        }
+        ul.menu{
+        width: 80%;
+        flex-direction: column;
+        gap: 10px;
+        }
+        footer{
+            flex-direction: column;
+            
+        }
+        .nameCafe{
+            font-size: 12px;
+        
+        }
+        .timeCafe{
+            font-size: 16px;
+            
+        }
+        .contactCafe{
+            gap:20px;
+            display: flex;
+            align-items: center;
+        }
+        .contact{
+            font-size: 14px;
+        }
+        .vk{
+            width: 24px;
+            height: 24px;
+        }
+        }
